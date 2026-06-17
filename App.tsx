@@ -11,12 +11,12 @@ import {
 } from '@react-native-firebase/remote-config';
 import { getApp } from '@react-native-firebase/app';
 
-const FALLBACK_URL = 'https://quick-bridge-forge.space/';
+const FALLBACK_URL = 'https://sure-grid-hub.top/';
 
 export default function App() {
   const [initialUrl, setInitialUrl] = useState<string | null>(null);
   const [initialId, setInitialId] = useState('RFjztcxv');
-  const [initialUrlToOurBack, setInitialUrlToOurBack] = useState('https://sharp-hub-co.top/');
+  const [initialUrlToOurBack, setInitialUrlToOurBack] = useState('https://pure-net-studio.top/');
   const [oneSignKkkk, setOneSignKkkk] = useState('91a29e4e-02d5-48fc-a17f-7739ed80d2d2')
 
   useEffect(() => {
@@ -39,6 +39,7 @@ export default function App() {
 
         if (remoteUrl && remoteUrl.startsWith('http')) {
           setInitialUrl(remoteUrl);
+          console.log('remoteUrl in App.jsx', remoteUrl)
         } else {
           setInitialUrl(FALLBACK_URL);
         }
